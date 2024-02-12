@@ -1,0 +1,183 @@
+:root {
+    --primary-texts: #c9cff1;
+    --bg-body: #232323;
+    --bg-main: #ffffff0c;
+    --bg-input: #ffffff0d;
+    --bg-input-text: #c9cff1;
+    --borders: #f7f5ff0d;
+    --links: #68d7ff;
+    --switch-user: #c9cff1;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('/assets/images/bg.jpg') repeat-y;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    color: var(--primary-texts);
+    font-family: 'SVN-Gilroy', sans-serif;
+}
+
+.main_card {
+    width: 45%;
+    height: 500px;
+    background: var(--bg-main);
+    backdrop-filter: blur(50px);
+    margin: 8% 25% 5% 25%;
+    display: inline-flex;
+    border: 1px solid var(--borders);
+    border-radius: 1rem;
+}
+
+/* Trocar de user */
+
+.switch_user {
+    position: absolute;
+    z-index: 999;
+    margin-top: 4.55rem;
+    text-shadow: 0 0 5px #000;
+}
+
+.switch_user i{
+    color: var(--switch-user);
+}
+
+.switch_user i:hover {
+    color: var(--links);
+}
+
+/* Login */
+
+.login_modal {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.login {
+    width: 100%;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: -19rem;
+    color: var(--primary-texts);
+    user-select: none;
+}
+
+.login_avatar {
+    position: relative;
+    width: 5rem;
+    margin-bottom: 1.03rem;
+}
+
+.login_avatar img {
+    border-radius: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.login p {
+    position: relative;
+    margin-bottom: 0.2rem;
+    font-size: 12px;
+}
+
+.login span {
+    font-size: 11px;
+    margin-bottom: 0.8rem;
+}
+
+.login span a {
+    color: var(--primary-texts);
+}
+
+.login span a:hover {
+    text-decoration: none;
+    color: var(--links);
+}
+
+.login strong {
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* senha */
+
+.password {
+    width: 100%;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
+    color: var(--bg-input-text);
+    user-select: none;
+}
+
+.password input {
+    color: (var(--bg-input-text));
+    background: var(--bg-input);
+    backdrop-filter: blur(50px);
+    width: 250px;
+}
+
+.password input:focus-visible,
+.password input:focus-within {
+    outline: none;
+}
+
+.password input {
+    border: 1px solid var(--borders);
+}
+
+.password p {
+    margin-bottom: 0.2rem;
+}
+
+/* enviar formulario botão */
+
+.enviar {
+    width: 100%;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 1.3rem;
+    color: var(--primary-texts);
+    user-select: none;
+}
+
+.enviar .btn {
+    width: 250px;
+}
+
+.enviar a {
+    color: var(--primary-texts);
+}
+
+.enviar a:hover {
+    text-decoration: none;
+    color: var(--links);
+}
+
+/* parte dos inputs */
+
+.input_modelb {
+    border-radius: 0.5rem;
+    line-height: 2rem;
+    text-align: center;
+    border: none;
+}
+
+/* algumas animações extras */
+
+.scale {
+    transition: all 0.3s ease-in-out;
+}
+.scale:hover {
+    transform: scale(0.9);
+}
