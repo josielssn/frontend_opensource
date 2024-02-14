@@ -1,0 +1,157 @@
+:root {
+    --p-text: #000;
+    --p-secondary-text: #00000087;
+    --bg-card: #7ef0ff07;
+    --body: #61ffb0;
+    --border-default: #d9d9d9;
+    --links: #393939;
+    --links-hover: #0ea7ff;
+    --footer-text: #ffffff;
+    --footer-text-bold: #fff;
+}
+
+body {
+    background: url('/assets/images/6.png') no-repeat top center;
+    background-size: cover;
+    color: var(--p-text);
+}
+
+.logo {
+    z-index: 999;
+    padding: 0;
+    margin: 15% auto;
+    display: flex;
+    margin-bottom: -5rem;
+    user-select: none;
+}
+
+.logo img {
+    width: 150px;
+    margin: auto;
+    position: inherit;
+}
+
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 389px;
+    height: 450px;
+    background: var(--bg-card);
+    border-radius: 10%;
+    backdrop-filter: blur(70px);
+}
+
+/** Inputs **/
+
+.login_input {
+    margin: auto;
+    margin-top: 10rem;
+    width: 60%;
+}
+
+.password_input {
+    margin: auto;
+    margin-top: 0.8rem;
+    width: 60%;
+}
+
+.form-control {
+    border-left: 0.5px solid var(--border-default);
+}
+
+.input-login_part {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--p-secondary-text);
+    text-align: center;
+    white-space: nowrap;
+    background-color: #ffffff;
+    border-top: 1px solid var(--border-default);
+    border-left: 1px solid var(--border-default);
+    border-bottom: 1px solid var(--border-default);
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.bottom_login {
+    margin-top: 8%;
+    display: inline-flex;
+    width: 100%;
+}
+
+/** password text **/
+
+.rec_pass {
+    position: absolute;
+    width: 30%;
+    height: 1rem;
+    color: var(--p-secondary-text);
+    text-align: center;
+    font-size: 11px;
+    position: absolute;
+    margin: 0 25%;
+}
+
+.rec_pass a {
+    color: var(--links);
+}
+
+/** Botões **/
+
+.custom {
+    background: rgb(255, 255, 255);
+    margin: auto 21.5% auto auto;
+    position: inherit;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom:hover {
+    background: var(--links-hover);
+    color: #fff;
+}
+
+/** Footer **/
+
+footer {
+    user-select: none;
+    padding: 0;
+    font-size: 11px;
+}
+
+footer a {
+    color: var(--footer-text-bold);
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: var(--footer-text-bold);
+    text-decoration: none;
+}
+
+p {
+    color: var(--footer-text);
+}
+
+b {
+    color: var(--footer-text-bold);
+}
+
+/** Extra effects **/
+
+.shadow_1 {
+    text-shadow: 0 0 8px #000000;
+}
